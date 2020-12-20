@@ -7,10 +7,10 @@ class Sp::DatabukuController < ApplicationController
     @datas = Databuku.all
   end
 
-  def search
-    buku_judul = params[:buku_judul].to_s
-    @data = Databuku.where(":buku_judul LIKE ?",  "%" + params[:q] + "%")
-  end
+  # def search
+  #   buku_judul = params[:buku_judul].to_s
+  #   @data = Databuku.where(":buku_judul LIKE ?",  "%" + params[:q] + "%")
+  # end
 
   def baru
     @data = Databuku.new

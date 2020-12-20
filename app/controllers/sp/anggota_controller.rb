@@ -8,10 +8,10 @@ class Sp::AnggotaController < ApplicationController
     @datas = Anggotum.all
   end
 
-  def search
-    anggota_id = params[:anggota_id].to_i
-    @data = Anggotum.where("anggota_nama LIKE ?", "%" + params[:q] + "%")
-  end
+  # def search
+  #   anggota_id = params[:anggota_id].to_i
+  #   @data = Anggotum.where("anggota_nama LIKE ?", "%" + params[:q] + "%")
+  # end
 
   def baru
     @data = Anggotum.new
