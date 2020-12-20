@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  peminjaman_nama: MyString
+  peminjaman_buku: MyString
+  peminjaman_tglpinjam: MyString
+  peminjaman_tglkembali: MyString
+
+two:
+  peminjaman_nama: MyString
+  peminjaman_buku: MyString
+  peminjaman_tglpinjam: MyString
+  peminjaman_tglkembali: MyString

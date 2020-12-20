@@ -1,0 +1,29 @@
+<%= form_for(@data, url: url_for(action: 'view', pengembalian_id: @data.id), multipart: true ) do |f| %>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+
+    <tr>
+      <td>ID Peminjaman</td>
+      <td>:</td>
+      <td><%= @data.pengembalian_idpinjam %></td>
+    </tr>
+
+    <tr>
+      <td>Tanggal Pengembalian</td>
+      <td>:</td>
+      <td><%= @data.pengembalian_tanggal %></td>
+    </tr>
+    <tr>
+      <td>Denda</td>
+      <td>:</td>
+      <td><%= @data.pengembalian_denda %></td>
+    </tr>
+    <tr>
+      <td>Tahun Terbit</td>
+      <td>:</td>
+      <td><%= @data.buku_thnterbit %></td>
+    </tr>
+
+</div>
+<% end %>

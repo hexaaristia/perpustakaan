@@ -1,0 +1,29 @@
+<%= form_for(@data, url: url_for(action: 'view', anggota_id: @data.id), multipart: true ) do |f| %>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+
+    <tr>
+      <td>Nama</td>
+      <td>:</td>
+      <td><%= @data.anggota_nama %></td>
+    </tr>
+
+    <tr>
+      <td>Tanggal Lahir</td>
+      <td>:</td>
+      <td><%= @data.anggota_tgllahir %></td>
+    </tr>
+    <tr>
+      <td>Alamat</td>
+      <td>:</td>
+      <td><%= @data.anggota_alamat %></td>
+    </tr>
+    <tr>
+      <td>Jenis Kelamin</td>
+      <td>:</td>
+      <td><%= @data.anggota_jk %></td>
+    </tr>
+
+</div>
+<% end %>

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  anggota_nama: MyString
+  anggota_tgllahir: MyString
+  anggota_alamat: MyString
+  anggota_jk: MyString
+
+two:
+  anggota_nama: MyString
+  anggota_tgllahir: MyString
+  anggota_alamat: MyString
+  anggota_jk: MyString

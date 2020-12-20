@@ -1,0 +1,42 @@
+<%= form_for(@data, url: url_for(action: 'baru_post'), multipart: true ) do |f| %>
+<div class="form-group">
+  <div class="row">
+    <%= f.label 'Nama', { class: 'col-md-2' } %>
+    <div class="col-md-8">
+        <%= f.text_field :anggota_nama, { class: 'form-control', placeholder: '' } %>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="row">
+    <%= f.label 'Tanggal lahir', { class: 'col-md-2' } %>
+    <div class="col-md-8">
+        <%= f.date_field :anggota_tgllahir, { class: 'form-control', placeholder: '' } %>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="row">
+    <%= f.label 'Alamat', { class: 'col-md-2' } %>
+    <div class="col-md-8">
+        <%= f.text_field :anggota_alamat, { class: 'form-control', placeholder: '' } %>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="row">
+    <%= f.label 'Jenis Kelamin', { class: 'col-md-2' } %>
+    <div class="col-md-8">
+        <%= f.select(:anggota_jk, ['Laki-laki', 'Perempuan'], {}, { class: 'form-control-lg', placeholder: '' } )%>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <input type="submit" value="Masukan" class="btn btn-primary">
+</div>
+<% end %>

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  buku_judul: MyString
+  buku_penulis: MyString
+  buku_penerbit: MyString
+  buku_thnterbit: MyString
+
+two:
+  buku_judul: MyString
+  buku_penulis: MyString
+  buku_penerbit: MyString
+  buku_thnterbit: MyString

@@ -1,0 +1,58 @@
+<!--<style media="screen">
+  .th {
+    text-align: center;
+  }
+</style> -->
+
+
+
+<div class="table-responsive">
+
+
+  <table class="table table-striped table-bordered">
+    <a href="/sp/databuku/baru" class="btn btn-primary">Baru</a>
+    <thead>
+      <tr>
+        <th style="text-align:center">Aksi</th>
+        <th style="text-align:center">#</th>
+        <th style="text-align:center">Judul Buku</th>
+        <th style="text-align:center">Penulis</th>
+        <th style="text-align:center">Penerbit</th>
+        <th style="text-align:center">Tahun Terbit</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+
+      <% @datas.each do |f| %>
+      <tr>
+        <td>
+          <a href="<%= url_for action: 'view', databuku_id: f.id %>" class="btn btn-small btn-default">View</a>
+          <a href="<%= url_for action: 'edit', databuku_id: f.id %>" class="btn btn-small btn-success">Edit</a>
+          <%= link_to 'hapus',url_for(action: :hapus, databuku_id: f.id), method: :delete, data: {confirm: "Apakah Anda yakin ingin menghapus data tersebut?"}, class: 'btn btn-small btn-danger' %>
+        </td>
+        <td><%= f.id %></td>
+        <td><%= f.buku_judul %></td>
+        <td><%= f.buku_penulis %></td>
+        <td><%= f.buku_penerbit %></td>
+        <td><%= f.buku_thnterbit %></td>
+      </tr>
+      <% end %>
+
+
+    </tbody>
+  </table>
+  <div class="row">
+    <div class="col">
+      <form class="form-inline mr-auto" action="/sp/databuku/search">
+        <div class="search-element">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary" type="submit"><i class="ion ion-search"></i></button>
+        </div>
+        </form>
+
+    </div>
+
+  </div>
+</div>

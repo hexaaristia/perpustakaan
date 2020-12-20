@@ -1,0 +1,34 @@
+<%= form_for(@data, url: url_for(action: 'view', peminjaman_id: @data.id), multipart: true ) do |f| %>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+
+    <tr>
+      <td>Judul Buku</td>
+      <td>:</td>
+      <td><%= @data.peminjaman_buku %></td>
+    </tr>
+
+    <tr>
+      <td>Nama Peminjam</td>
+      <td>:</td>
+      <td><%= @data.peminjaman_nama %></td>
+    </tr>
+    <tr>
+      <td>Tanggal Pinjam</td>
+      <td>:</td>
+      <td><%= @data.peminjaman_tglpinjam %></td>
+    </tr>
+    <tr>
+      <td>Tanggal Kembali</td>
+      <td>:</td>
+      <td><%= @data.peminjaman_tglkembali %></td>
+    </tr>
+    <tr>
+      <td>Status</td>
+      <td>:</td>
+      <td><%= @data.peminjaman_status %></td>
+    </tr>
+
+</div>
+<% end %>

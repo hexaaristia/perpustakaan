@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  oadm_nama: MyString
+  oadm_email: MyString
+  oadm_telepon: MyString
+  oadm_password: MyString
+
+two:
+  oadm_nama: MyString
+  oadm_email: MyString
+  oadm_telepon: MyString
+  oadm_password: MyString
